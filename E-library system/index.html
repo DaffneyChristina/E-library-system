@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Library System</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <div class="container">
+      <h1>E-Library System</h1>
+
+      <form id="searchBook" class="search-Book">
+          <input type="text" id="searchQuery" placeholder="Enter book title">
+          <button type="submit">Search</button>
+      </form>
+
+      <div id="searchResults" class="search-results">
+      </div>
+
+      <div id="borrowForm" class="borrow-form">
+          <h2>Borrow Book</h2>
+          <input type="text" id="userId" placeholder="Enter user ID">
+          <input type="text" id="bookId" placeholder="Enter book ID">
+          <button id="borrowButton">Borrow</button>
+          <p id="borrowMessage"></p>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+  </body>
+</html>
